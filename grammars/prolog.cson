@@ -1,0 +1,36 @@
+
+scopeName: 'text.prolog'
+name: 'Prolog'
+type: 'tree-sitter'
+parser: 'tree-sitter-prolog'
+fileTypes: [
+  'pl'
+]
+scopes:
+  #atom': ,
+  'functor > atomic > atom': 'entity.name.function'
+  'functor > compound_term > atom': 'entity.name.function'
+  'operator': 'keyword.operator',
+  'number': 'constant.numeric',
+  'variable': 'variable',
+  'comment': 'comment',
+  'end': 'keyword.control',
+  'quoted_atom': 'string.quoted.single',
+  'string': 'string.quoted.double',
+  'atom': [
+    { exact: 'true', scopes: 'builtin.variable'},
+    { exact: 'false', scopes: 'builtin.variable'},
+    { exact: 'fail', scopes: 'builtin.variable'},
+    { exact: '!', scopes: 'builtin.variable'},
+    { exact: 'apply', scopes: 'builtin.variable'},
+    'entity.name.function',
+  ]
+
+folds: [
+  {
+    type: 'comment'
+  }
+  {
+    type: 'bracketed_term'
+  }
+]

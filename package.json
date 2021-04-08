@@ -1,0 +1,23 @@
+{
+  "name": "language-prolog",
+  "version": "0.0.0",
+  "description": "Tree sitter prolog implementation",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "scripts": {
+    "build": "cd node_modules/tree-sitter-prolog && tree-sitter generate && cd ../../ && electron-rebuild -v 6",
+    "test": "tree-sitter test && tree-sitter parse examples/*.pl --quiet --time"
+  },
+  "repository": "https://github.com/atom/language-prolog",
+  "license": "MIT",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "dependencies": {
+    "tree-sitter-cli": "^0.15.3",
+    "tree-sitter-prolog": "*"
+  }
+}
