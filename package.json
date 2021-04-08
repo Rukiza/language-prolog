@@ -1,6 +1,6 @@
 {
   "name": "language-prolog",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Tree sitter prolog implementation",
   "keywords": [
     "language",
