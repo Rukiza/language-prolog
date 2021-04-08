@@ -17,6 +17,7 @@ scopes:
   'end': 'keyword.control',
   'quoted_atom': 'string.quoted.single',
   'string': 'string.quoted.double',
+  'cut': 'entity.name.function',
   'atom': [
     { exact: 'true', scopes: 'builtin.variable'},
     { exact: 'false', scopes: 'builtin.variable'},
