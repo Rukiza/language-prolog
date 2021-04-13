@@ -1,5 +1,5 @@
 
-scopeName: 'text.prolog'
+scopeName: 'source.prolog'
 name: 'Prolog'
 type: 'tree-sitter'
 parser: 'tree-sitter-prolog'
@@ -33,5 +33,7 @@ folds: [
   }
   {
     type: 'bracketed_term'
+    start: {index:0}
+    end: {index:-1}
   }
 ]

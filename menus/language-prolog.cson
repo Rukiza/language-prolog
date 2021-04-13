@@ -1,0 +1,21 @@
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle prolog indentation'
+      'command': 'language-prolog:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'language-prolog'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'langauge-prolog:toggle'
+        }
+      ]
+    ]
+  }
+]

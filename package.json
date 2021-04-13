@@ -1,6 +1,7 @@
 {
   "name": "language-prolog-treesitter",
   "version": "0.2.0",
+  "main": "./lib/language-prolog",
   "description": "Tree sitter prolog implementation",
   "keywords": [
     "language",
